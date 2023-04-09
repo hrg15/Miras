@@ -1,0 +1,105 @@
+// Add partials
+@use "./Partials/header";
+@use "./Partials/homeMain";
+@use "./Partials/footer";
+
+// Fonts
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Assets/fonts/Iransans/woff/IRANSansWeb.woff") format("woff"),
+    url("../Assets/fonts/Iransans/ttf/IRANSansWeb.ttf") format("ttf");
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../Assets/fonts/Iransans/woff/IRANSansWeb_Bold.woff") format("woff"),
+    url("../Assets/fonts/Iransans/ttf/IRANSansWeb_Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../Assets/fonts/Iransans/woff/IRANSansWeb_Medium.woff")
+      format("woff"),
+    url("../Assets/fonts/Iransans/ttf/IRANSansWeb_Medium.ttf") format("ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../Assets/fonts/Iransans/woff/IRANSansWeb_Light.woff")
+      format("woff"),
+    url("../Assets/fonts/Iransans/ttf/IRANSansWeb_Light.ttf") format("ttf");
+  font-weight: lighter;
+}
+// Number fonts
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Assets/fonts/Iransans/ttf-num/IRANSansWeb\(FaNum\)_Medium.ttf")
+      format("ttf"),
+    url("../Assets/fonts/Iransans/woff-num/IRANSansWeb\(FaNum\)_Medium.woff")
+      format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../Assets/fonts/Iransans/ttf-num/IRANSansWeb\(FaNum\)_Medium.ttf")
+      format("ttf"),
+    url("../Assets/fonts/Iransans/woff-num/IRANSansWeb\(FaNum\)_Bold.woff")
+      format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../Assets/fonts/Iransans/ttf-num/IRANSansWeb\(FaNum\)_Light.ttf")
+      format("ttf"),
+    url("../Assets/fonts/Iransans/woff-num/IRANSansWeb\(FaNum\)_Light.woff")
+      format("woff");
+  font-weight: lighter;
+}
+// Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #fff;
+  font-family: IRANSans !important;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: IRANSans !important;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+button {
+  border: none;
+}
+p {
+  margin: 0;
+  line-height: 2;
+}

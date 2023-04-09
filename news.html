@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Assets/logo2.ico" />
+    <link rel="stylesheet" href="./Sass/owl/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/clay/lib/css/atlas.css"
+    />
+    <link rel="stylesheet" href="./Sass/clay/atlas.css" />
+    <link rel="stylesheet" href="./Sass/news.css" />
+    <title>جزئیات خبر</title>
+  </head>
+  <body dir="rtl" id="body">
+    <header class="header">
+      <div id="menu-sticky" class="container-fluid p-0 nav-sticky">
+        <div id="menu" class="menu mt-10 d-flex justify-content-around">
+          <div class="space-top"></div>
+          <div
+            id="menu-align"
+            class="container d-flex justify-content-between align-items-center"
+          >
+            <button class="burger-menu d-lg-none" id="open-menu">
+              <svg
+                id="burger-menu"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 7H21"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 12H21"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 17H21"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <svg
+                id="close-menu"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 17L17 7"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 17L7 7"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div class="logo-header col-3 col-sm-2 col-lg-1" id="logo-header">
+              <a href="#"><img src="./Assets/logo.png" alt="logo" /></a>
+            </div>
+            <div id="menu-lists" class="menu-list" style="margin: 1px">
+              <div
+                class="burger-menu-close d-flex justify-content-between align-items-center d-lg-none px-2"
+              >
+                <button id="responsive-close-menu" class="col-2">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 17L17 7"
+                      stroke="#292D32"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17 17L7 7"
+                      stroke="#292D32"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="responsive-menu-logo col-3 col-md-2 p-3">
+                  <img class="w-100" src="./Assets/logo.svg" alt="logo" />
+                </div>
+              </div>
+              <ul id="menu-items" class="d-lg-flex justify-content-around m-0">
+                <li>
+                  <a href="#">آشنایی با پژوهشگاه </a>
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.08366 0.958252L5.00033 5.04159L0.916992 0.958252"
+                      stroke="#DEE2EE"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <ul>
+                    <li>
+                      <a href="#">زیر منو 1</a>
+                    </li>
+                    <li>
+                      <a href="#">زیر منو 2</a>
+                    </li>
+                    <li>
+                      <a href="#">زیر منو 3 </a>
+                      <svg
+                        width="10"
+                        height="6"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.08366 0.958252L5.00033 5.04159L0.916992 0.958252"
+                          stroke="#DEE2EE"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <ul>
+                        <h3>زیر منو</h3>
+                        <li><a href="#">دومین زیرلایه 1</a></li>
+                        <li>
+                          <a href="#">دومین زیرلایه 2 </a>
+                          <svg
+                            width="10"
+                            height="6"
+                            viewBox="0 0 10 6"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.08366 0.958252L5.00033 5.04159L0.916992 0.958252"
+                              stroke="#DEE2EE"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <ul>
+                            <h3>زیر منو</h3>
+                            <li><a href="#">سومین زیرلایه 1 </a></li>
+                            <li><a href="#">سومین زیرلایه 2</a></li>
+                            <li><a href="#">سومین زیرلایه 3</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">دومین زیرلایه 3</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">زیر منو 4</a>
+                    </li>
+                    <li>
+                      <a href="#">زیر منو 5</a>
+                    </li>
+                    <li>
+                      <a href="#">زیر منو 6</a>
+                    </li>
+                    <li>
+                      <a href="#">زیر منو 7</a>
+                    </li>
+                    <li>
+                      <a href="#">زیر منو 8</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">پژوهشکده و گروه های پژوهشی</a></li>
+                <li><a href="#">پژوهش و فناوری</a></li>
+                <li><a href="#">سامانه ها</a></li>
+                <li><a href="#">دستاورد ها</a></li>
+                <li>
+                  <a href="#"> رویداد های علمی </a>
+                  <svg
+                    width="10"
+                    height="6"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.08366 0.958252L5.00033 5.04159L0.916992 0.958252"
+                      stroke="#DEE2EE"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <ul>
+                    <li><a href="#">زیر لایه 1 </a></li>
+                    <li><a href="#">زیر لایه 2 </a></li>
+                    <li><a href="#">زیر لایه 3</a></li>
+                    <li><a href="#">زیر لایه 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-btn flex-grow-1 flex-lg-grow-0">
+              <ul class="d-flex justify-content-end justify-content-lg-between">
+                <li class="home-icon d-none d-md-block" id="home-icon">
+                  <a href="/"
+                    ><svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 18V15"
+                        stroke="#626E94"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5703 2.81985L3.64027 8.36985C2.86027 8.98985 2.36027 10.2998 2.53027 11.2798L3.86027 19.2398C4.10027 20.6598 5.46027 21.8098 6.90027 21.8098H18.1003C19.5303 21.8098 20.9003 20.6498 21.1403 19.2398L22.4703 11.2798C22.6303 10.2998 22.1303 8.98985 21.3603 8.36985L14.4303 2.82985C13.3603 1.96985 11.6303 1.96985 10.5703 2.81985Z"
+                        stroke="#626E94"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <button id="search-btn">
+                    <svg
+                      id="search-icon"
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        id="search-icon-circle"
+                        cx="9.76688"
+                        cy="9.76663"
+                        r="8.98856"
+                        stroke="#626E94"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="search-icon-path"
+                        d="M16.0186 16.4851L19.5426 20"
+                        stroke="#626E94"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <svg
+                      id="close-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="close-path"
+                        d="M7 17L17 7"
+                        stroke="#626E94"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        id="close-circle"
+                        d="M17 17L7 7"
+                        stroke="#626E94"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="search-box"
+                    class="search-box search-bg-white"
+                    style="width: 0px"
+                  >
+                    <button>
+                      <svg
+                        id="search-icon"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          id="search-icon-btn"
+                          cx="9.76688"
+                          cy="9.76663"
+                          r="8.98856"
+                          stroke="#626E94"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          id="search-icon-path-btn"
+                          d="M16.0186 16.4851L19.5426 20"
+                          stroke="#626E94"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <input
+                      id="search-input"
+                      type="search"
+                      placeholder="جستوجو..."
+                    />
+                  </div>
+                </li>
+                <li><button id="change-news-lan">En</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="page-path">
+        <p>صفحه اصلی/عنوان خبر</p>
+      </div>
+      <div
+        class="news-info flex-column flex-md-row mb-6 d-flex justify-content-between"
+      >
+        <div class="news-date d-flex align-items-center">
+          <img src="./Assets/calendar (2).svg" alt="calendar" />
+          <p>14 شهریور 1400</p>
+        </div>
+        <div class="news-tag d-none d-md-block">
+          <ul class="d-flex p-3 justify-content-around align-items-center">
+            <li>#<a href="#">مهندسی صنایع</a></li>
+            <li>#<a href="#">معاونت</a></li>
+            <li>#<a href="#">پژوهشگاه میراث</a></li>
+          </ul>
+        </div>
+      </div>
+      <article>
+        <div
+          class="news-overviwe flex-column flex-lg-row mb-6 d-flex justify-content-between"
+        >
+          <div class="news-title col-lg-6 order-1 order-lg-0">
+            <p>به دستور رئیس پژوهشگاه</p>
+            <h1>نوشته ها حاکی از اثر بزرگی از تمدن ایران است</h1>
+            <div class="news-text">
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+                زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+            </div>
+          </div>
+          <div
+            class="news-img col-12 col-md-10 col-lg-6 order-0 order-lg-1 mx-auto my-4 mx-lg-0"
+          >
+            <img src="./Assets/Rectangle 51.png" alt="Rectangle" />
+          </div>
+        </div>
+        <div class="context">
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+            زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+            متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+            رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+            کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+            راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+            حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+            طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید
+            سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+            و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+            ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+            آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها
+            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت
+            که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+            رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+          </p>
+        </div>
+        <div class="news-image my-4">
+          <img src="./Assets/Rectangle 9144-min.jpg" alt="news image" />
+          <span>زیر عنوان عکس</span>
+        </div>
+        <div class="context">
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+            زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+            متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+            رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+            کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+            راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+            حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+            طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید
+            سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+            و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+            ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+            آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها
+            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت
+            که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+            رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم
+            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+            از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+            سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را
+            می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و
+            شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+            دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+            مورد استفاده قرار گیرد.
+          </p>
+          <div class="news-tag col-12 d-block d-md-none mt-4">
+            <ul
+              class="d-flex p-3 m-auto justify-content-around align-items-center"
+            >
+              <li>#<a href="#">مهندسی صنایع</a></li>
+              <li>#<a href="#">معاونت</a></li>
+              <li>#<a href="#">پژوهشگاه میراث</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <div
+        class="share-news col-12 flex-column flex-sm-row d-flex justify-content-around justify-content-md-between align-items-center my-5 px-3"
+      >
+        <p>اشتراک گذاری</p>
+        <ul class="d-flex justify-content-end align-items-center">
+          <li>
+            <a href="#">
+              <svg
+                width="15"
+                height="13"
+                viewBox="0 0 15 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1606 3.48797C13.1664 3.61997 13.1664 3.74597 13.1664 3.87797C13.1722 7.87998 10.2319 12.5 4.85489 12.5C3.26899 12.5 1.71202 12.026 0.375 11.138C0.606519 11.168 0.838038 11.18 1.06956 11.18C2.38343 11.18 3.66257 10.724 4.69862 9.87799C3.44842 9.85399 2.3487 9.00799 1.96669 7.77198C2.40658 7.86198 2.85804 7.84399 3.28635 7.71798C1.92618 7.44198 0.94801 6.19998 0.942222 4.75398C0.942222 4.74198 0.942222 4.72998 0.942222 4.71798C1.34738 4.95198 1.80463 5.08398 2.26767 5.09598C0.988526 4.20797 0.589155 2.43797 1.36474 1.05196C2.85225 2.94797 5.04011 4.09397 7.39003 4.21997C7.15272 3.16997 7.47685 2.06597 8.23507 1.32196C9.41003 0.17596 11.2622 0.235961 12.3735 1.45396C13.0275 1.32196 13.6584 1.06996 14.2314 0.715962C14.0115 1.41796 13.5542 2.01197 12.9465 2.38997C13.5253 2.31797 14.0925 2.15597 14.625 1.91597C14.2314 2.52797 13.7337 3.05597 13.1606 3.48797Z"
+                  fill="#A9B5D4"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg
+                width="19"
+                height="15"
+                viewBox="0 0 19 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.286966 6.97732C2.23071 5.95671 4.40047 5.1049 6.42778 4.24873C9.91554 2.8464 13.4172 1.46837 16.9541 0.185436C17.6423 -0.0331632 18.8788 -0.246941 19 0.725197C18.9336 2.10125 18.6605 3.46924 18.4732 4.83723C17.9977 7.84558 17.4482 10.8436 16.9123 13.8421C16.7276 14.8408 15.4151 15.3578 14.5753 14.7187C12.557 13.4191 10.5231 12.1322 8.53061 10.8025C7.87791 10.1703 8.48315 9.26244 9.06608 8.81098C10.7284 7.24935 12.4914 5.92257 14.0668 4.28024C14.4918 3.30196 13.2361 4.12642 12.822 4.37903C10.5462 5.87396 8.32616 7.46016 5.92681 8.77399C4.70122 9.41711 3.27277 8.86751 2.04774 8.50864C0.949338 8.07514 -0.660222 7.6384 0.286855 6.97739L0.286966 6.97732Z"
+                  fill="#A9B5D4"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <div
+              class="share-link-box d-flex justify-content-between align-items-center"
+            >
+              <button>
+                <img src="./Assets/copy-success.svg" alt="copy-success" />
+              </button>
+              <a href="#">ttps://docs.google.com/sprea</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="related-news">
+        <h2>اخبار مرتبط</h2>
+        <div id="news-slider" class="swiper news-slider">
+          <ul
+            id="news-slider-ul"
+            class="swiper-wrapper d-flex justify-content-between"
+          >
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="related-img">
+                  <img src="./Assets/image 17 (1).png" alt="news" />
+                </div>
+                <p>12 اردیبهشت 1400</p>
+                <h3>
+                  <a href="#">کتاب باستان شناسی مردم روستا منتشر شد</a>
+                </h3>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="related-img">
+                  <img src="./Assets/image 17 (1).png" alt="news" />
+                </div>
+                <p>12 اردیبهشت 1400</p>
+                <h3>
+                  <a href="#">کتاب باستان شناسی مردم روستا منتشر شد</a>
+                </h3>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="related-img">
+                  <img src="./Assets/image 17 (1).png" alt="news" />
+                </div>
+                <p>12 اردیبهشت 1400</p>
+                <h3>
+                  <a href="#">کتاب باستان شناسی مردم روستا منتشر شد</a>
+                </h3>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <div class="related-img">
+                  <img src="./Assets/image 17 (1).png" alt="news" />
+                </div>
+                <p>12 اردیبهشت 1400</p>
+                <h3>
+                  <a href="#">کتاب باستان شناسی مردم روستا منتشر شد</a>
+                </h3>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination position-relative d-md-none"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid p-0">
+        <div
+          class="blue-footer d-flex justify-content-between align-items-center"
+        >
+          <div
+            class="container d-flex flex-column flex-md-row h-50 justify-content-between align-items-center"
+          >
+            <ul class="d-flex justify-content-around">
+              <li>
+                <a href="#">
+                  <img src="./Assets/svg/facebook.svg" alt="facebook" />
+
+                  فیسبوک
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./Assets/svg/instagram.svg" alt="instagram" />
+
+                  اینستاگرام
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./Assets/svg/whatsapp.svg" alt="whatsapp" />
+                  واتساپ</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./Assets/Aparat.png" alt="Aparat" />آپارات</a
+                >
+              </li>
+            </ul>
+            <div class="news-join">
+              <a href="#">
+                <img src="./Assets/Message2.svg" alt="Message2" />
+                عضویت در خبرنامه
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="black-footer">
+          <div class="head-footer">
+            <div class="head">
+              <div class="footer-logo">
+                <a href="#"><img src="./Assets/logo2.png" alt="logo" /></a>
+              </div>
+              <img src="./Assets/background/footerhead.png" alt="" />
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="footer-menu flex-column flex-lg-row d-flex justify-content-between align-items-start"
+            >
+              <div class="first-footer-menu col-12 col-md-6 h-100">
+                <h3>پژوهشکده ها و معاونت ها</h3>
+                <ul class="d-md-flex flex-md-wrap flex-md-column">
+                  <li><a href="#">پژوهشکده باستان شناسی</a></li>
+                  <li><a href="#">پژوهشکده انبیا و بافت های قذیمی</a></li>
+                  <li><a href="#">پژوهشکده حفاظت و مرمت</a></li>
+                  <li><a href="#">پژوهشکده مردم شناسی</a></li>
+                  <li><a href="#">پژوهشکده زبان شناسی کتیبه ها و متون</a></li>
+                  <li><a href="#">گروه هنر های سنتی</a></li>
+                  <li><a href="#">گروه گردشگری</a></li>
+                  <li><a href="#">گروه میراث طبیعی</a></li>
+                  <li><a href="#">ماونت پژوهشی</a></li>
+                  <li><a href="#">معاونت اداری و مالی و توسعه مدیریت</a></li>
+                  <li><a href="#">معاونت فناوری و کاربردی سازی</a></li>
+                </ul>
+              </div>
+              <div class="secend-footer-menu col-12 col-md-3">
+                <h3>پیوندها</h3>
+                <ul>
+                  <li>
+                    <a href="#">وزات میراث فرهنگی گردشگری و صنایع دستی</a>
+                  </li>
+                  <li><a href="#">وزارت علوم و تحقیقات فناوری</a></li>
+                </ul>
+              </div>
+              <div class="third-footer-menu col-12 col-md-3">
+                <h3>ارتباط با ما</h3>
+                <ul>
+                  <li>
+                    <h5>
+                      <img src="./Assets/svg/location.svg" alt="location" />
+                      آدرس
+                    </h5>
+                    <p>
+                      تهران، خیابان امام خمینی، خ سی تیر، روبروی ساختمان موزه
+                      ملی ایران، شماره 2 ، پژوهشگاه میراث فرهنگی و گردشگری
+                    </p>
+                  </li>
+                  <li>
+                    <p>کد پستی 66736452-60</p>
+                  </li>
+                  <li>
+                    <div class="footer-contact">
+                      <img src="./Assets/svg/Calling.svg" alt="Calling" />
+
+                      <p>تلفن: 66736452-60</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer-contact">
+                      <img src="./Assets/svg/Message.svg" alt="msg" />
+
+                      <p>پست الکترونیکی: pr.richt@gmail.com - pr@richt.ir</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <hr style="background-color: rgba(255, 255, 255, 0.4)" />
+              <div
+                class="justify-content-center justify-content-md-between align-items-center flex-wrap flex-md-nowrap d-flex"
+              >
+                <div class="copyright-info d-flex align-items-center">
+                  <img src="./Assets/svg/copyright.svg" alt="copy" />
+                  <p>کلیه حقوق متعلق به پژوهشگاه میراث فرهنگی میباشد</p>
+                </div>
+                <div class="copyright-source d-flex align-items-center">
+                  <p>بقیه صفحات</p>
+                  <a href="hrg15.github.io/miras/">صفحه اصلی</a>
+                  <a href="hrg15.github.io/miras/news">صفحه خبر</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-pattern"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="./Sass/owl/swiper-bundle.min.js"></script>
+    <script src="./home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clay/lib/js/clay.js"></script>
+  </body>
+</html>

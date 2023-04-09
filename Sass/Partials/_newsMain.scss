@@ -1,0 +1,160 @@
+.page-path {
+  margin: 58px 0;
+  color: #bfc4d5;
+}
+.news-tag {
+  ul {
+    background: #f7f9fc;
+    border-radius: 10px;
+    height: 72px;
+    li {
+      display: flex;
+      align-items: center;
+      a {
+        color: #7e8aab;
+      }
+    }
+  }
+}
+.news-info {
+  .news-date {
+    p {
+      color: #69a1ef;
+      margin: 0;
+    }
+    img {
+      max-width: 24px;
+      max-height: 24px;
+      margin-left: 5px;
+    }
+  }
+}
+article {
+  .news-overviwe {
+    .news-title {
+      h1 {
+        font-size: 2em;
+        margin: 40px 0;
+      }
+    }
+    .news-img {
+      overflow: hidden;
+      min-height: 340px;
+      border-radius: 16px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .context {
+    p {
+      line-height: 1.6;
+    }
+  }
+  .news-image {
+    min-height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+.share-news {
+  height: 77px;
+  background: #f7f9fc;
+  border-radius: 10px;
+  ul {
+    li {
+      margin: 0 10px;
+      .share-link-box {
+        border: 0.3px solid #bdc5dd;
+        border-radius: 5px;
+        background: #fff;
+        width: 185px;
+        height: 45px;
+        overflow: hidden;
+        button {
+          background: #285eff;
+          height: 100%;
+          padding: 5px;
+          img {
+            max-width: 30px;
+          }
+        }
+      }
+      a {
+        img {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+}
+.related-news {
+  margin-bottom: 150px;
+  .swiper-pagination {
+    bottom: -5px;
+  }
+  ul {
+    li {
+      width: 300px;
+      a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          color: #285eff;
+        }
+
+        h3 {
+          color: #000;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  h2 {
+    margin: 100px 0 50px;
+    font-size: 2em;
+  }
+  p {
+    color: #98a2b3;
+    margin: 20px 0;
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+  .related-img {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+// Responsive
+
+@media (max-width: 576px) {
+  article .news-overviwe .news-title h1 {
+    font-size: 1.25em;
+  }
+  .share-news {
+    height: 100px;
+    padding: 10px;
+  }
+  article {
+    .context p {
+      font-size: 0.8125em;
+    }
+  }
+  .news-text {
+    p {
+      font-size: 0.8125em;
+    }
+  }
+  .news-tag ul li a {
+    font-size: 0.75em;
+  }
+}

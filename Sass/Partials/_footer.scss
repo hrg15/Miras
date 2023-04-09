@@ -1,0 +1,217 @@
+footer {
+  .blue-footer {
+    position: relative;
+    height: 69px;
+    background: #69a1ef;
+    width: 100%;
+    ul {
+      li {
+        display: flex;
+        margin: 0 5px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+          &:hover {
+            color: #000;
+          }
+          img {
+            max-width: 40%;
+          }
+        }
+      }
+    }
+    .news-join {
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        &:hover {
+          color: #000;
+        }
+        img {
+          max-width: 20%;
+        }
+      }
+    }
+  }
+  .black-footer {
+    position: relative;
+    background: #020a14;
+    min-height: 608px;
+    padding: 70px 0;
+    box-shadow: 0px -16px 34px 0px rgba(0, 0, 0, 0.12);
+    .head-footer {
+      position: absolute;
+      top: -8%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 191px;
+      .head {
+        position: relative;
+        img {
+          max-width: 100%;
+        }
+        .footer-logo {
+          position: absolute;
+          width: 70px;
+          height: 100px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          top: 70%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    .footer-copyright {
+      height: fit-content;
+      .copyright-info {
+        p {
+          margin: 0;
+          color: #7e8aab;
+        }
+        svg {
+          margin-left: 5px;
+        }
+        img {
+          max-width: 24px;
+          max-height: 24px;
+          margin: 0 5px;
+        }
+      }
+      .copyright-source {
+        p {
+          color: #98a2b3;
+        }
+        a {
+          margin: 0 10px;
+          color: #fff;
+          text-decoration: none;
+          padding-bottom: 2px;
+          border-bottom: 0.3px dashed;
+        }
+      }
+    }
+    .footer-pattern {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: url("../Assets/background/Vector-min.png");
+      height: 608px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.1;
+      pointer-events: none;
+    }
+  }
+  .footer-menu {
+    height: 450px;
+    .first-footer-menu {
+      width: auto;
+      // flex: 1;
+      ul {
+        height: 90%;
+      }
+    }
+    .secend-footer-menu {
+      width: auto;
+      // flex: 1;
+    }
+    .third-footer-menu {
+      width: auto;
+      // flex: 1;
+      h5 {
+        color: #bdc5dd;
+        img {
+          max-width: 7%;
+        }
+      }
+      p {
+        color: #bdc5dd;
+      }
+      li {
+        .footer-contact {
+          display: flex;
+        }
+        img {
+          max-width: 24px;
+          max-height: 24px;
+          margin-left: 5px;
+        }
+      }
+    }
+    ul {
+      li {
+        margin: 0 0 20px 0px;
+        a {
+          color: #bdc5dd;
+          &:hover {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    h3 {
+      color: #ffff;
+      margin-bottom: 50px;
+    }
+  }
+}
+.secend-footer-menu {
+  height: 225px;
+}
+
+// Responsive
+
+@media (max-width: 992px) {
+  footer {
+    .black-footer {
+      padding-bottom: 20px;
+      .head-footer {
+        width: 150px;
+        top: -188px;
+        .head .footer-logo {
+          width: 50px;
+        }
+      }
+    }
+    .blue-footer {
+      height: 140px;
+    }
+    .footer-menu {
+      height: fit-content;
+      ul {
+        height: auto;
+      }
+      .third-footer-menu {
+        ul {
+          height: auto;
+        }
+      }
+      .third-footer-menu {
+        width: auto;
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  footer .black-footer .footer-copyright {
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  footer .black-footer .footer-copyright .copyright-info {
+    p {
+      font-size: 0.937em;
+    }
+  }
+}
+@media (min-width: 992px) {
+  footer .black-footer {
+    padding-bottom: 24px;
+  }
+}
